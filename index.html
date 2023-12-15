@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d7eef68ae2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="pt-5">
+    <!--Form-->
+    <div class="container border border-secondary-subtle">
+        
+        <div class="row border-bottom" id="header">
+            <div class="col-12 bg-body-tertiary py-2"><h2 class="fw-bolder">Payment form example</h2></div>
+        </div>
+
+        <div class="form ">
+            <div class="col-12 bg-danger-subtle border border-danger-subtle rounded-1 mt-3" id="cajaRoja">
+                <p id="dangerText" class="fw-medium">Some fields are missing</p>
+            </div>
+            <div class="row" id="numbers">
+                <div class="col-5 mb-3 pt-3">
+                    <form>
+                        <label class="form-label fw-bolder" for="cardNumber">Card #</label>
+                        <input class="form-control" type="text" id="cardNumber" placeholder="xxx xxx xxxx xxxx">
+                    </form>
+                </div>
+
+                <div class="col-3 mb-3 pt-3">
+                    <form>
+                        <label class="form-label fw-bolder"  for="cvc">CVC #</label>
+                        <input class="form-control" type="text" id="cvc" placeholder="000">
+                    </form>
+                </div>
+
+                <div class="col-4 mb-0 pt-3">
+                    <form>
+                        <label class="form-label fw-bolder"  for="amount">Amount</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                          </div>
+                    </form>
+                </div>
+
+                <div class="col-6">
+                        <form>
+                            <label class="form-label fw-bolder"  for="first-name">First Name</label>
+                            <input class="form-control" type="text" id="first-name">
+                        </form>
+                </div>
+
+                    <div class="col-6 ">
+                        <form>
+                            <label class="form-label fw-bolder"  for="last-name">Last Name</label>
+                            <input class="form-control" type="text" id="last-name">
+                        </form>
+                    </div>
+
+                    <div class="col-6 mt-3">
+                        <form>
+                            <label class="form-label fw-bolder"  for="city">City</label>
+                            <input class="form-control" type="text" id="city">
+                        </form>
+                    </div>
+
+                    <div class="col-3 mt-3">
+                        <form>
+                            <label class="form-label fw-bolder"  for="state">State</label>
+                            <select class="form-select" type="text" id="state">
+                                <option selected disabled value="">Pick a state</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="col-3 mt-3">
+                        <form>
+                            <label class="form-label fw-bolder"  for="postal-code">Postal Code</label>
+                            <input class="form-control" type="text" id="postal-code" required>
+                        </form>
+                    </div>
+
+                    <div class="col-md-4 mt-3 fw-bolder">
+                        <label for="validationTooltip03" class="form-label mb-3">We Accept :</label>
+                        <br>
+                        <div class="btn btn-secondary col">
+                            <input type="radio" name="mastercard">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <input type="radio" name="visa">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <input type="radio" name="discover">
+                            <i class="fa-brands fa-cc-discover"></i>
+                            <input type="radio" name="american_experss">
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </div>
+                    </div>
+
+                        <div class="col-2 mt-3">
+                        </div>
+
+                    <div class="col-6 mt-3">
+                        <label for="message" class="fw-bolder mb-3">Message</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="message" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2"></label>
+                        </div>
+                        <p class="fw-light">add any notes here</p>
+                    </div>
+
+            </div>
+
+            <div class="row border-top " id="footer">
+                <div class="col-12 bg-body-tertiary py-2 pe-2 " style="text-align: right;">
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+
+
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+    margin=0;
+    padding=0;
+}
+
+#dangerText {
+    color: rgb(124, 12, 12);
+    line-height: 10px;
+    padding-top: 14px;
+    padding-left: 15px;
+}
